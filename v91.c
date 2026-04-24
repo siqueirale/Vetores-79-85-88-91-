@@ -13,9 +13,10 @@ int main(){
     for(int i=0; i<M; i++){
         for(int j=0;j<M;j++){
         if(VET[i]==VET[j] && i!=j){
-            if(j<i)
+            if(j<i){
             jaapareceu = 1;
             break;
+            }
         }
         }
         if(jaapareceu==1){
@@ -24,7 +25,6 @@ int main(){
         }
         jaapareceu = 0;
     }
-
     printf("\nNumeros repetidos e suas respectivas posicoes:");
     for(int i=0; i<cont; i++){
         printf("\nValor %d: ",repetidos[i]);
